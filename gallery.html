@@ -3,6 +3,8 @@
 <head>
 	<title>RadicalPhoto Gallery</title>
 	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link rel="stylesheet" href="css/lightbox.css">
+
 	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
 </head>
 <body>
@@ -26,22 +28,24 @@
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
+	
 	<div id="gallery">
 		<ul>
-			<li><a href="images/blue_dress.jpg"><img src="images/blue_dress_thumb.jpg"></a></li>
-			<li><a href="images/boxer.jpg"><img src="images/boxer_thumb.jpg"></a></li>
-			<li><a href="images/cow.jpg"><img src="images/cow_thumb.jpg"></a></li>
-			<li><a href="images/country_boy_relaxing.jpg"><img src="images/country_boy_relaxing_thumb.jpg"></a></li>
-			<li><a href="images/eye.jpg"><img src="images/eye_thumb.jpg"></a></li>
-			<li><a href="images/ice_swim.jpg"><img src="images/ice_swim_thumb.jpg"></a></li>
-			<li><a href="images/sitting.jpg"><img src="images/sitting_thumb.jpg"></a></li>
+		
+			<li><a href="images/boxer.jpg" data-lightbox="land"><img id="boxer" src="images/boxer_thumb.jpg" width="150" height="100" alt="boxer" title="Boxer"></a></li>
+			<li><a href="images/country_boy_relaxing.jpg" data-lightbox="land"><img id="boy" src="images/country_boy_relaxing_thumb.jpg" width="150" height="100" alt="country boy relaxing" title="Country Boy Relaxing"></a></li>
+			<li><a href="images/eye.jpg" data-lightbox="land"><img id="eye" src="images/eye_thumb.jpg" width="150" height="100" alt="eye" title="Eye"></a></li>
+			<li><a href="images/ice_swim.jpg" data-lightbox="land"><img id="swim" src="images/ice_swim_thumb.jpg" width="150" height="100" alt="ice swim" title="Ice Swim"></a></li>
+			<li><a href="images/sitting.jpg" data-lightbox="land"><img id="sitting" src="images/sitting_thumb.jpg" width="150" height="100" alt="Sitting" title="Sitting"></a></li>
 		</ul>
 
-		<p><img src="images/blue_dress.jpg" alt=""></p>
+		<div id="image_large"><img src="images/blue_dress.jpg" width="800" height="533" alt="blue dress" title="Blue Dress"></div>
 
 	</div>
 
 	</div>
+
+
 
 	<div id="footer">
 	<p>All content &copy; Copyright</p>
@@ -49,5 +53,6 @@
 
 </div>
 
+    
 </body>
 </html>
